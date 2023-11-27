@@ -1,0 +1,27 @@
+.hero {
+  background-image: url(/src/img/hero/background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  @extend %flex-center;
+  padding-top: 200px;
+}
+
+.hero__container {
+  @extend %flex-centerl;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+@media (min-width: 768px) {
+    .header__container {
+      gap: 35px;
+    }
+    .hero__title {
+      font-size: 52px;
+    }
+    .hero__text {
+      font-size: 24px;
+    }
+  }
+  
